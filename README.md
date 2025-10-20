@@ -33,7 +33,7 @@ Dominoz is a simple Python-based Dominoes game consisting of a **server** and a 
 - Propose servers on issues
 
 ### Demo server:
-- 147.185.221.31:48067
+- sorry the demo server shut down
 ## Installation
 
 1. Clone the repository:
