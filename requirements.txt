@@ -1,5 +1,7 @@
-socket
-threading
-pickle
-random
-time
+# socket
+# threading
+# pickle
+# random
+# time
+
+# Just deafult things
