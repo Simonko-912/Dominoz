@@ -34,7 +34,7 @@ Dominoz is a simple Python-based Dominoes game consisting of a **server** and a 
 
 ### Public server:
 #### Make sure your using the corect port, if none is below just tipe the 5555 deafult.
-- dominoz-server.onrender.com
+- soon
 ## Installation
 
 1. Clone the repository:
