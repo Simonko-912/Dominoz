@@ -1,5 +1,5 @@
 services:
-  - type: private_service 
+  - type: worker
     name: dominoz-server
     env: python
     plan: free
