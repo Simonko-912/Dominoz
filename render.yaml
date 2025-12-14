@@ -4,7 +4,7 @@ services:
     env: python
     plan: free
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python Server/main.py"
+    startCommand: "python renderdemo/main.py"
     envVars:
       - key: SERVER_NAME
         value: "OfficialDominoz"
