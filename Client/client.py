@@ -8,6 +8,10 @@ import socket
 import pickle
 import threading
 import time
+import urllib.request
+
+CLIENT_VERSION = "0.0.2"
+VERSION_URL = "https://raw.githubusercontent.com/Simonko-912/Dominoz/main/newestver.txt"
 
 def print_logo():
     logo = r"""
@@ -65,6 +69,32 @@ YOUR_HAND = []
 PLAYERS_IN_LOBBY = []
 CURRENT_TURN = None
 USERNAME = None
+
+
+def check_for_updates():
+    try:
+        with urllib.request.urlopen(VERSION_URL, timeout=3) as response:
+            latest = response.read().decode("utf-8").strip()
+
+        if latest != CLIENT_VERSION:
+            print("Update available")
+            print(f" Your version: {CLIENT_VERSION}")
+            print(f" Latest version: {latest}")
+            print(" Update here:")
+            print(" https://github.com/Simonko-912/Dominoz")
+            print(" DON'T DOWNLOAD FROM OTHER SITES.")
+            print(" Updates are recomended for security, and bugfixes.")
+            print()
+        else:
+            print(f"Client up to date (v{CLIENT_VERSION})")
+            print()
+
+    except Exception as e:
+        print("Could not check for updates")
+        print(" Reason:", e)
+        print()
+
+check_for_updates()
 
 def handle_server_message(msg):
     global CURRENT_LOBBY, YOUR_HAND, PLAYERS_IN_LOBBY, CURRENT_TURN
