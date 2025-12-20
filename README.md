@@ -30,7 +30,7 @@ Dominoz is a simple Python-based Dominoes game consisting of a **server** and a 
 
 ---
 ## Server list
-- Propose servers on issues
+- Propose servers on issues or dm simonko_11015
 
 ### Public server:
 #### Make sure your using the corect port, if none is below just tipe the 5555 deafult.
