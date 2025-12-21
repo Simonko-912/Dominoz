@@ -34,7 +34,11 @@ Here is the new [Dominoz itch.io page](https://simonko-912.itch.io/dominoz)
 
 ### Public server:
 #### Make sure your using the corect port, if none is below just tipe the 5555 deafult.
-- soon
+New official server! 
+```
+dominoz.tailfe3e5f.ts.net
+```
+
 ## Installation
 
 1. Clone the repository:
